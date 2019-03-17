@@ -1,18 +1,6 @@
 <template>
   <div class="content-box">
-    <div class="content-box-left">
-      <span class="section-title">
-          About
-      </span>
-      <p>
-        My name is Lauren.
-      </p>
-      <p>My name is Lauren. My name is Lauren. My name is Lauren. My name is Lauren.</p>
-      <p>My name is Lauren.My name is Lauren.My name is Lauren.My name is Lauren.My name is Lauren.My name is Lauren.My name is Lauren.My name is Lauren.My name is Lauren.My name is Lauren.My name is Lauren.My name is Lauren.</p>
-    </div>
-    <div class="content-box-right">
-      <span>hey</span>
-    </div>
+    <slot></slot>
   </div>
 </template>
 
@@ -32,15 +20,59 @@ export default class ContentBox extends Vue {
   display: flex;
   margin: 25px 0;
 
-  .content-box-left {
-    background-color: rgb(126, 57, 216);
-    border-radius: 0 15px 15px 0;
-    flex: 1;
-    padding: 10px;
+  .college {
+    span {
+      display: block;
+    }
   }
 
-  .content-box-right {
+  .grad-cap {
+    float: right;
+
+    .fa-graduation-cap {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .left {
+    border-radius: 0 15px 15px 0;
+  }
+
+  .right {
+    border-radius: 15px 0 0 15px;
+  }
+
+  .content-box-text {
+    background-color: rgb(126, 57, 216);
     flex: 1;
+    font-size: 18px;
+    padding: 10px;
+
+    .section-title {
+      font-size: 36px;
+      font-weight: bold;
+    }
+  }
+
+  .content-box-image {
+    flex: 1;
+
+    .image {
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 100%;
+      margin: auto;
+      width: 50%;
+    }
+
+    .me-image {
+      background-image: url('../assets/me.png');
+    }
+
+    .nyu-image {
+      background-image: url('../assets/NYU.jpg');
+    }
   }
 }
 </style>

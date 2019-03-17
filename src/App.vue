@@ -1,9 +1,11 @@
 <template>
-  <div id="app">
-    <ame-header/>
-    <ame-sidebar/>
-    <ame-content/>
-    <ame-footer/>
+  <div>
+    <div id="app">
+      <ame-header/>
+      <ame-sidebar/>
+      <ame-content/>
+      <ame-footer/>
+    </div>
   </div>
 </template>
 
@@ -47,11 +49,12 @@ body {
 }
 
 body, html {
-  height: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
 #app {
-  height: 100%;
+  min-height: 100%;
 }
 
 .content {
