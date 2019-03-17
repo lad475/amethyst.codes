@@ -28,10 +28,11 @@ export default class ContentBox extends Vue {
 
   .grad-cap {
     float: right;
+    text-align: center;
 
     .fa-graduation-cap {
-      height: 100px;
-      width: 100px;
+      height: 50%;
+      width: 50%;
     }
   }
 

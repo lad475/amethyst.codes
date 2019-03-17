@@ -8,7 +8,7 @@
         <i class="fab fa-linkedin"></i>
       </div>
       <div class="disclaimer">
-        Made with <div class="vue-logo"></div> and <div class="heart"></div>
+        Made with <div class="vue-logo"></div> and <div class="heart"></div> by Lauren DiGiovanni
       </div>
     </div>
   </div>
