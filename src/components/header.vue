@@ -1,6 +1,7 @@
 <template>
   <div id="header">
     <span class="title">amethyst.codes</span>
+    <div class="description">Just your average programmer with a passion for coffee and the color purple</div>
   </div>
 </template>
 
@@ -15,8 +16,12 @@ export default class Header extends Vue {
 
 <style lang="scss" scoped>
 
-#header {
-  margin-left: 125px;
+.description {
+  box-sizing: border-box;
+  background-color: purple;
+  width: 100%;
+  padding: 5px 5px 5px 105px;
+  color: white;
 }
 
 .title {
@@ -25,7 +30,7 @@ export default class Header extends Vue {
   overflow: hidden;
   border-right: .05em solid purple;
   white-space: nowrap;
-  margin: 0 auto;
+  margin-left: 125px;
   letter-spacing: .05em;
   animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
 }
