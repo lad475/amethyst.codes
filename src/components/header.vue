@@ -15,6 +15,10 @@ export default class Header extends Vue {
 
 <style lang="scss" scoped>
 
+#header {
+  margin-left: 125px;
+}
+
 .title {
   font-size: 80px;
   display: inline-block;
@@ -27,13 +31,13 @@ export default class Header extends Vue {
 }
 
 @keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
+  from { width: 0 }
+  to { width: 650px }
 }
 
 @-webkit-keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
+  from { width: 0 }
+  to { width: 650px }
 }
 
 @keyframes blink-caret {

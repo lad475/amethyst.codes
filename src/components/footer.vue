@@ -2,13 +2,13 @@
   <div id="footer" class="footer-container">
     <div class="footer-content">
       <div class="icon-container">
-        <i class="fab fa-github-square"></i>
-        <i class="fab fa-twitter-square"></i>
+        <a href="https://www.github.com/lad475" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a href="https://twitter.com/amethystx87" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <i class="fab fa-instagram"></i>
         <i class="fab fa-linkedin"></i>
       </div>
       <div class="disclaimer">
-        Made with love and amethysts
+        Made with <div class="vue-logo"></div> and <div class="heart"></div>
       </div>
     </div>
   </div>
@@ -33,9 +33,28 @@ export default class Footer extends Vue {
   width: 100%;
 }
 
+.vue-logo {
+  background-image: url('../assets/logo.png');
+  background-size: cover;
+  display: inline-block;
+  margin: 0 5px;
+  width: 18px;
+  height: 18px;
+}
+
+.heart {
+  background-image: url('../assets/heart.png');
+  margin: 0 5px;
+  background-size: cover;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
 .svg-inline--fa {
   color: white;
   height: 50px;
+  margin: 0 5px;
   width: 50px;
 
   &:hover {
@@ -44,13 +63,16 @@ export default class Footer extends Vue {
 }
 
 .icon-container {
-  display: inline-block;
+  float: left;
   text-align: center;
   width: 50%;
 }
 
 .disclaimer {
+  color: white;
+  font-size: 18px;
   display: inline-block;
+  margin-top: 15px;
   text-align: center;
   width: 50%;
 }
