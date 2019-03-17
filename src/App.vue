@@ -56,6 +56,7 @@ body, html {
 
 .content {
   padding-bottom: 100px;
+  margin-left: 100px;
 }
 
 h1 {
