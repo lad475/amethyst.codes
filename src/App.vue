@@ -53,6 +53,10 @@ body, html {
   position: relative;
 }
 
+.bold {
+  font-family: 'Raleway-Bold', sans-serif;
+}
+
 #app {
   min-height: 100%;
 }

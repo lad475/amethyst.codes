@@ -11,11 +11,13 @@
         <i class="fas fa-graduation-cap"></i>
       </div>
       <div class="college">
-        <span>New York University</span>
-        <span>BA in Computer Science</span>
-        <span>Minor in Web Programming</span>
-        <span>GPA: 3.75</span>
-        <span>Expected May 2019</span>
+        <p>
+          <span>New York University</span>
+          <span>BA in Computer Science</span>
+          <span>Minor in Web Programming</span>
+          <span>GPA: 3.75</span>
+          <span>Expected May 2019</span>
+        </p>
       </div>
     </div>
   </ame-content-box>
@@ -32,3 +34,24 @@ import ContentBox from './content-box.vue';
 })
 export default class Education extends Vue {}
 </script>
+
+<style lang="scss" scoped>
+
+.college {
+  span {
+    display: block;
+  }
+}
+
+.grad-cap {
+  float: right;
+  text-align: center;
+  margin-top: 30px;
+
+  .fa-graduation-cap {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+</style>

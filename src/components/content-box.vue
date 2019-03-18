@@ -15,6 +15,10 @@ export default class ContentBox extends Vue {
 
 <style lang="scss" scoped>
 
+.sub-section-title {
+  font-size: 25px;
+}
+
 .content-box {
   color: white;
   display: flex;
@@ -46,7 +50,7 @@ export default class ContentBox extends Vue {
 
   .content-box-text {
     background-color: rgb(126, 57, 216);
-    flex: 1;
+    flex: 2;
     font-size: 18px;
     padding: 10px;
 
@@ -64,7 +68,7 @@ export default class ContentBox extends Vue {
       background-size: contain;
       height: 100%;
       margin: auto;
-      width: 50%;
+      width: 75%;
     }
 
     .me-image {

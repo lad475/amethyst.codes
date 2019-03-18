@@ -1,7 +1,7 @@
 <template>
   <div id="sidebar">
     <div class="amethyst"></div>
-    <div class="navigation">
+    <div class="navigation bold">
       <a>About</a>
       <a>Education</a>
       <a>Skills</a>
@@ -44,6 +44,7 @@ export default class SideBar extends Vue {
 
   margin-top: 150px;
   a {
+    color: white;
     display: block;
     font-weight: bold;
     margin: 25px auto;
@@ -51,6 +52,7 @@ export default class SideBar extends Vue {
 
     &:hover {
       color: rgb(216, 124, 208);
+      cursor: pointer;
     }
   }
 }

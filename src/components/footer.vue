@@ -4,8 +4,9 @@
       <div class="icon-container">
         <a href="https://www.github.com/lad475" target="_blank"><i class="fab fa-github-square"></i></a>
         <a href="https://twitter.com/amethystx87" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
+        <a href="https://www.instagram.com/amethystx87/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/lauren-digiovanni-4b9601119/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sample@example.com?Subject=Not%20Implemented" target="_top"><i class="fas fa-envelope-square"></i></a>
       </div>
       <div class="disclaimer">
         Made with <div class="vue-logo"></div> and <div class="heart"></div> by Lauren DiGiovanni
@@ -26,7 +27,7 @@ export default class Footer extends Vue {
 <style lang="scss" scoped>
 
 .footer-container {
-  background-color: rgb(126, 57, 216);
+  background-color: purple;
   height: 100px;
   position: absolute;
   bottom: 0;
@@ -38,6 +39,8 @@ export default class Footer extends Vue {
   background-size: cover;
   display: inline-block;
   margin: 0 5px;
+  position: relative;
+  top: 5px;
   width: 18px;
   height: 18px;
 }
@@ -47,6 +50,8 @@ export default class Footer extends Vue {
   margin: 0 5px;
   background-size: cover;
   display: inline-block;
+  position: relative;
+  top: 5px;
   height: 20px;
   width: 20px;
 }
@@ -64,7 +69,6 @@ export default class Footer extends Vue {
 
 .icon-container {
   float: left;
-  text-align: center;
   width: 50%;
 }
 
