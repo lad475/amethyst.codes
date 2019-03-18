@@ -1,6 +1,6 @@
 <template>
   <ame-content-box>
-    <div class="content-box-image">
+    <div class="content-box-image" id="education">
       <div class="nyu-image image"/>
     </div>
     <div class="content-box-text right">

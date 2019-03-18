@@ -22,7 +22,7 @@ export default class ContentBox extends Vue {
 .content-box {
   color: white;
   display: flex;
-  margin: 25px 0;
+  margin: 50px 0;
 
   .college {
     span {
@@ -52,7 +52,7 @@ export default class ContentBox extends Vue {
     background-color: rgb(126, 57, 216);
     flex: 2;
     font-size: 18px;
-    padding: 10px;
+    padding: 20px;
 
     .section-title {
       font-size: 36px;

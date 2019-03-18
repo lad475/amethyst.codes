@@ -1,6 +1,6 @@
 <template>
   <ame-content-box>
-    <div class="content-box-text">
+    <div class="content-box-text" id="skills">
       <span class="section-title">Skills</span>
       <hr>
       <div class="lists">

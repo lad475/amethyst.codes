@@ -1,6 +1,6 @@
 <template>
   <ame-content-box>
-      <div class="content-box-text left">
+      <div class="content-box-text left" id="about">
       <span class="section-title">
           Who am I?
       </span>

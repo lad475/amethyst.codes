@@ -27,5 +27,6 @@ export default class Content extends Vue {
 
 <style lang="scss" scoped>
 
+
 </style>
 

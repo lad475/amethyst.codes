@@ -2,9 +2,9 @@
   <div id="sidebar">
     <div class="amethyst"></div>
     <div class="navigation bold">
-      <a>About</a>
-      <a>Education</a>
-      <a>Skills</a>
+      <a id="a" href="javascript:;" v-on:click="scrolling('about')">About</a>
+      <a id="e" href="javascript:;" v-on:click="scrolling('education')">Education</a>
+      <a id="s" href="javascript:;" v-on:click="scrolling('skills')">Skills</a>
       <a>Experience</a>
       <a>Projects</a>
     </div>
@@ -16,7 +16,17 @@ import { Vue, Component } from 'vue-property-decorator';
 
 @Component
 export default class SideBar extends Vue {
+  constructor() { super(); }
 
+  public scrolling(elem: string) {
+    const element = document.getElementById(elem);
+    if (element) {
+      window.scrollTo({
+        top: element.getBoundingClientRect().top,
+        behavior: 'smooth',
+      });
+    }
+  }
 }
 </script>
 
