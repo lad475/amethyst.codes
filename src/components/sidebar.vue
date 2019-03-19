@@ -2,10 +2,10 @@
   <div id="sidebar">
     <div class="amethyst"></div>
     <div class="navigation bold">
-      <a id="a" href="javascript:;" v-on:click="scrolling('about')">About</a>
-      <a id="e" href="javascript:;" v-on:click="scrolling('education')">Education</a>
-      <a id="s" href="javascript:;" v-on:click="scrolling('skills')">Skills</a>
-      <a>Experience</a>
+      <a href="javascript:;" v-on:click="scrolling('about')">About</a>
+      <a href="javascript:;" v-on:click="scrolling('education')">Education</a>
+      <a href="javascript:;" v-on:click="scrolling('skills')">Skills</a>
+      <a href="javascript:;" v-on:click="scrolling('experience')">Experience</a>
       <a>Projects</a>
     </div>
   </div>
@@ -22,7 +22,7 @@ export default class SideBar extends Vue {
     const element = document.getElementById(elem);
     if (element) {
       window.scrollTo({
-        top: element.getBoundingClientRect().top,
+        top: element.getBoundingClientRect().top + window.scrollY,
         behavior: 'smooth',
       });
     }
@@ -59,6 +59,7 @@ export default class SideBar extends Vue {
     font-weight: bold;
     margin: 25px auto;
     text-align: center;
+    text-decoration: none;
 
     &:hover {
       color: rgb(216, 124, 208);
