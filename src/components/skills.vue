@@ -34,6 +34,7 @@
             <li>Docker</li>
             <li>Git</li>
             <li>Bash</li>
+            <li>Adobe Photoshop + Illustrator</li>
           </ul>
         </div>
       </div>
