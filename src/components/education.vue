@@ -7,6 +7,7 @@
       <span class="section-title">
         Education
       </span>
+      <hr/>
       <div class="grad-cap">
         <i class="fas fa-graduation-cap"></i>
       </div>
@@ -46,7 +47,6 @@ export default class Education extends Vue {}
 .grad-cap {
   float: right;
   text-align: center;
-  margin-top: 30px;
 
   .fa-graduation-cap {
     height: 50%;

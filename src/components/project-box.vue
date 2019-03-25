@@ -4,7 +4,7 @@
         {{ name }}
       </span>
       <div class="proj-img" :class="img"/>
-      <a class="proj-link" :href="link" target="_blank">{{ linkTitle }}</a>
+      <a class="proj-link" :href="link ? link : 'javascript:;'" target="_blank">{{ linkTitle }}</a>
       <span class="project-description">
         {{ description }}
       </span>
@@ -47,6 +47,7 @@ export default class ProjectBox extends Vue {
   min-width: 250px;
   margin: 25px;
   border-radius: 15px;
+  &.content-box-text { box-shadow: 12px 12px rgb(88, 9, 153); }
 
 
   .proj-img {
@@ -59,7 +60,7 @@ export default class ProjectBox extends Vue {
   }
 
   .questify {
-    background-image: url('../assets/questify.png');
+    background-image: url('../assets/questify-2.png');
   }
 
   .pt-image {
@@ -75,11 +76,11 @@ export default class ProjectBox extends Vue {
   }
 
   .mybuddy {
-    background-image: url('../assets/NYU.jpg');
+    background-image: url('../assets/mybuddy-2.png');
   }
   
   .foodface {
-    background-image: url('../assets/NYU.jpg');
+    background-image: url('../assets/ff.png');
   }
   
   .proj-link {

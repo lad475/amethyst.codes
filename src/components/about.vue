@@ -4,6 +4,7 @@
       <span class="section-title">
           Who am I?
       </span>
+      <hr/>
       <p>
         I'm Lauren DiGiovanni, a software engineer located in Brooklyn, New York.  I'm currently finishing up my last year at NYU, getting my degree in Computer Science.
       </p>

@@ -6,14 +6,13 @@
       </div>
     </ame-content-box>
     <ame-content-box>
-      <ame-project-box name="Questify (Name subject to change)"
+      <ame-project-box name="Questify (Title pending)"
                       description="An open source framework for building games for WebVR built ontop of AFrame.  Allows
                                     for the user to easily create VR worlds with NPCs that can be interacted with, and will
                                     provide other standard RPG functionality, such as collecting items, an inventory, and 
                                     completing various kinds of quests."
                       technologies="AFrame.js, WebVR, TypeScript"
                       img="questify"
-                      link="#"
                       linkTitle="WIP"/>
       <ame-project-box name="PalmTree Website"
                       description="The website for PalmTree, the borrowing service.  Written in Vue.js, it
@@ -37,7 +36,6 @@
                                     how high the user has stacked the characters, and saves the highest score locally."
                       technologies="Unity, C#, Adobe Photoshop"
                       img="stackit"
-                      link="#"
                       linkTitle="Coming soon to iOS and Android!"/>
       <ame-project-box name="MyBuddy"
                       description="A virtual pet that you can raise!  Allows the user to log in with their Google
@@ -46,7 +44,7 @@
                                     recognition as well as changing outdoor weather depending on the time of day.  The pet can die and evolve as well."
                       technologies="JavaScript, p5.js, Google Firebase"
                       img="mybuddy"
-                      link=""
+                      link="https://rfree18.github.io/my-buddy/"
                       linkTitle="MyBuddy Site (Hosted on GitHub pages)"/>
       <ame-project-box name="FoodFace Industries"
                       description="Website that allows the user to play a dress up like game on fruit, by using custom parts
@@ -54,7 +52,7 @@
                                     to save the image to their gallery, and another gallery of all of the images made by all users."
                       technologies="Node.js, Express, Bootstrap, p5.js, MongoDB"
                       img="foodface"
-                      link=""
+                      link="https://github.com/lad475/Full-Stack-Food-Decoration-Website-Version-1"
                       linkTitle="View project on GitHub"/>
     </ame-content-box>
   </div>
