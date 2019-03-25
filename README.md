@@ -11,8 +11,8 @@ This is my personal portfolio website- created in Vue using TypeScript + SASS.  
 - Vue router to go to various pages (including my blog) that I will add to the site
 
 ## Credits
-Icons courtesy of FontAwesome
-Raleway font by Matt McInerney from Font Squirrel
-All other assets created by me
+- Icons courtesy of FontAwesome
+- Raleway font by Matt McInerney from Font Squirrel
+- All other assets created by me
 
 Thanks to the Vue.js team for their hard work on my favorite frontend framework!
