@@ -4,7 +4,7 @@
         {{ name }}
       </span>
       <div class="proj-img" :class="img"/>
-      <a class="proj-link" :href="link">{{ linkTitle }}</a>
+      <a class="proj-link" :href="link" target="_blank">{{ linkTitle }}</a>
       <span class="project-description">
         {{ description }}
       </span>
@@ -36,7 +36,6 @@ export default class ProjectBox extends Vue {
 <style lang="scss" scoped>
 
 .sub-section-title {
-  font-family: 'Raleway-Bold';
   font-size: 28px;
   display: block;
   text-align: center;
@@ -49,9 +48,6 @@ export default class ProjectBox extends Vue {
   margin: 25px;
   border-radius: 15px;
 
-  &:hover {
-    background-color: purple;
-  }
 
   .proj-img {
     text-align: center;
@@ -63,19 +59,19 @@ export default class ProjectBox extends Vue {
   }
 
   .questify {
-    background-image: url('../assets/NYU.jpg');
+    background-image: url('../assets/questify.png');
   }
 
   .pt-image {
-    background-image: url('../assets/NYU.jpg');
+    background-image: url('../assets/pt-logo.png');
   }
 
   .pt-logo-backend {
-    background-image: url('../assets/NYU.jpg');
+    background-image: url('../assets/pt-logo-backend.png');
   }
 
   .stackit {
-    background-image: url('../assets/NYU.jpg');
+    background-image: url('../assets/stackit.png');
   }
 
   .mybuddy {
@@ -88,9 +84,17 @@ export default class ProjectBox extends Vue {
   
   .proj-link {
     display: block;
-    color: rgb(216, 124, 208);
+    color: rgb(251, 130, 255);
     text-decoration: none;
+    font-family: 'Raleway-Bold';
     font-size: 20px;
+    margin: 15px 0;
+    text-align: center;
+
+    &:hover {
+      color: rgb(173, 163, 255);
+      text-decoration: underline;
+    }
   }
 
   .technologies {

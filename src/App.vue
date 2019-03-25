@@ -45,6 +45,7 @@ export default class App extends Vue {
 
 body {
   font-family: 'Raleway', sans-serif;
+  background-color: rgb(255, 231, 255);
   margin: 0;
 }
 
