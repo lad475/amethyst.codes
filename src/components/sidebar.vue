@@ -6,7 +6,7 @@
       <a href="javascript:;" v-on:click="scrolling('education')">Education</a>
       <a href="javascript:;" v-on:click="scrolling('skills')">Skills</a>
       <a href="javascript:;" v-on:click="scrolling('experience')">Experience</a>
-      <a>Projects</a>
+      <a href="javascript:;" v-on:click="scrolling('projects')">Projects</a>
     </div>
   </div>
 </template>

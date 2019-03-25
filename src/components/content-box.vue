@@ -22,6 +22,7 @@ export default class ContentBox extends Vue {
 .content-box {
   color: white;
   display: flex;
+  flex-wrap: wrap;
   margin: 50px 0;
 
   .college {
@@ -62,13 +63,16 @@ export default class ContentBox extends Vue {
 
   .content-box-image {
     flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
 
     .image {
       background-repeat: no-repeat;
       background-size: contain;
+      background-position: center;
       height: 100%;
       margin: auto;
-      width: 75%;
+      width: 100%;
     }
 
     .me-image {

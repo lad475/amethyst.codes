@@ -4,6 +4,7 @@
     <ame-education/>
     <ame-skills/>
     <ame-exp/>
+    <ame-projects/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import About from './about.vue';
 import Education from './education.vue';
 import Skills from './skills.vue';
 import Experience from './experience.vue';
+import Projects from '@/components/projects.vue';
 
 @Component({
   components: {
@@ -21,6 +23,7 @@ import Experience from './experience.vue';
     'ame-education': Education,
     'ame-skills': Skills,
     'ame-exp': Experience,
+    'ame-projects': Projects,
   },
 })
 export default class Content extends Vue {
