@@ -6,7 +6,7 @@
         <a href="https://twitter.com/amethystx87" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <a href="https://www.instagram.com/amethystx87/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/lauren-digiovanni-4b9601119/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:sample@example.com?Subject=Not%20Implemented" target="_top"><i class="fas fa-envelope-square"></i></a>
+        <a href="mailto:admin@amethyst.codes?Subject=Reaching%20out!" target="_top"><i class="fas fa-envelope-square"></i></a>
       </div>
       <div class="disclaimer">
         Made with <div class="vue-logo"></div> and <div class="heart"></div> by Lauren DiGiovanni

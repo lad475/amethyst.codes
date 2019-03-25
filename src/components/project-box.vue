@@ -85,7 +85,7 @@ export default class ProjectBox extends Vue {
   
   .proj-link {
     display: block;
-    color: rgb(251, 130, 255);
+    color: rgb(255, 173, 228);
     text-decoration: none;
     font-family: 'Raleway-Bold';
     font-size: 20px;

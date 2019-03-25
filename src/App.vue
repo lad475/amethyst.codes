@@ -70,4 +70,10 @@ body, html {
 h1 {
   font-family: 'Raleway-Bold', sans-serif;
 }
+
+@media (max-width: 560px) {
+  .content {
+    margin-left: 0;
+  }
+}
 </style>

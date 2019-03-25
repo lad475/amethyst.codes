@@ -38,6 +38,10 @@ export default class SideBar extends Vue {
   background-color: #d9a8f5;
   position: fixed;
   top: 0;
+
+  @media (max-width: 560px) {
+    display: none;
+  }
 }
 
 .amethyst {
