@@ -112,8 +112,14 @@ li {
 .content-box-text.nyu, .content-box-text.ww {
   border-radius: 15px;
   box-shadow: 12px 12px rgb(88, 9, 153);
+  box-sizing: border-box;
   margin: 25px;
   min-width: 400px;
+
+  @media only screen and (max-width: 560px) {
+    min-width: 100%;
+    margin: 25px 0;
+  }
 }
 
 .content-box-text.left {

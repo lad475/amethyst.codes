@@ -62,21 +62,16 @@ ul {
 
 .lists {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .content-box-text {
   text-align: center;
 }
 
-.languages {
+.languages, .web-tech, .other {
   flex: 1;
+  min-width: 240px;
 }
 
-.web-tech {
-  flex: 1;
-}
-
-.other {
-  flex: 1;
-}
 </style>

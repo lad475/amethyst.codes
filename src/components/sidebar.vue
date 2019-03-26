@@ -45,7 +45,7 @@ export default class SideBar extends Vue {
 }
 
 .amethyst {
-  background-image: url('../assets/Amethyst.png');
+  background-image: url('../assets/amethyst-2.png');
   background-size: contain;
   position: fixed;
   top: 15px;

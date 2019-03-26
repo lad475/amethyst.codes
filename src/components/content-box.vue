@@ -17,6 +17,10 @@ export default class ContentBox extends Vue {
 
 .sub-section-title {
   font-size: 25px;
+
+  @media only screen and (max-width: 560px) {
+    font-size: 16px;
+  }
 }
 
 .content-box {
@@ -44,6 +48,7 @@ export default class ContentBox extends Vue {
   .left {
     border-radius: 0 15px 15px 0;
     box-shadow: 5px 10px purple;
+    margin-right: 25px;
   }
 
   .right {
@@ -54,9 +59,17 @@ export default class ContentBox extends Vue {
   .content-box-text {
     background-color: rgb(126, 57, 216);
     box-shadow: 0 20px rgb(88, 9, 153);
+    box-sizing: border-box;
     flex: 2;
     font-size: 18px;
     padding: 20px;
+
+    @media only screen and (max-width: 560px) {
+      font-size: 14px;
+      min-width: 100% !important;
+      box-shadow: 0 20px rgb(88, 9, 153) !important;
+      border-radius: 0 !important;
+    }
 
     &.right {
       box-shadow: -12px 12px rgb(88, 9, 153);
@@ -68,7 +81,10 @@ export default class ContentBox extends Vue {
 
     .section-title {
       font-size: 36px;
-      font-weight: bold;
+
+      @media only screen and (max-width: 560px) {
+        font-size: 24px;
+      }
     }
   }
 
@@ -84,6 +100,12 @@ export default class ContentBox extends Vue {
       height: 100%;
       margin: auto;
       width: 100%;
+
+      @media only screen and (max-width: 560px) {
+        min-width: 200px;
+        min-height: 200px;
+        margin-top: 25px;
+      }
     }
 
     .me-image {
@@ -92,6 +114,10 @@ export default class ContentBox extends Vue {
 
     .nyu-image {
       background-image: url('../assets/NYU.jpg');
+
+      @media only screen and (max-width: 560px) {
+        display: none;
+      }
     }
   }
 }

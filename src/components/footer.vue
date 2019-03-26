@@ -32,6 +32,10 @@ export default class Footer extends Vue {
   position: absolute;
   bottom: 0;
   width: 100%;
+
+  @media only screen and (max-width: 560px) {
+    height: auto;
+  }
 }
 
 .vue-logo {
@@ -43,6 +47,13 @@ export default class Footer extends Vue {
   top: 5px;
   width: 18px;
   height: 18px;
+
+  @media (max-width: 560px) {
+    height: 13px;
+    width: 13px;
+    margin: 0 2.5px;
+    top: 0;
+  }
 }
 
 .heart {
@@ -54,6 +65,13 @@ export default class Footer extends Vue {
   top: 5px;
   height: 20px;
   width: 20px;
+
+  @media (max-width: 560px) {
+    height: 15px;
+    width: 15px;
+    margin: 0 2.5px;
+    top: 0;
+  }
 }
 
 .svg-inline--fa {
@@ -65,11 +83,23 @@ export default class Footer extends Vue {
   &:hover {
     color: rgb(216, 124, 208);
   }
+
+  @media (max-width: 560px) {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .icon-container {
   float: left;
   width: 50%;
+
+  @media only screen and (max-width: 560px) {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 
 .disclaimer {
@@ -79,10 +109,23 @@ export default class Footer extends Vue {
   margin-top: 15px;
   text-align: center;
   width: 50%;
+
+  @media (max-width: 855px) {
+    margin: 0;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 14px;
+    width: 100%;
+  }
 }
 
 .footer-content {
   padding: 25px 25px 25px 75px;
+
+  @media (max-width: 560px) {
+    padding: 25px;
+  }
 }
 
 </style>

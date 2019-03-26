@@ -47,6 +47,13 @@ export default class ProjectBox extends Vue {
   min-width: 250px;
   margin: 25px;
   border-radius: 15px;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 560px) {
+    min-width: 100%;
+    margin: 25px 0;
+  }
+
   &.content-box-text { box-shadow: 12px 12px rgb(88, 9, 153); }
 
 
