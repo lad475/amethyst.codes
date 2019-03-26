@@ -101,7 +101,7 @@ export default class ContentBox extends Vue {
       margin: auto;
       width: 100%;
 
-      @media only screen and (max-width: 560px) {
+      @media only screen and (max-width: 770px) {
         min-width: 200px;
         min-height: 200px;
         margin-top: 25px;
@@ -114,6 +114,13 @@ export default class ContentBox extends Vue {
 
     .nyu-image {
       background-image: url('../assets/NYU.jpg');
+
+      @media only screen and (max-width: 770px) {
+        min-width: 120px;
+        min-height: 120px;
+        width: 120px;
+        height: 120px;
+      }
 
       @media only screen and (max-width: 560px) {
         display: none;

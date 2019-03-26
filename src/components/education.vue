@@ -52,6 +52,10 @@ export default class Education extends Vue {}
     height: 50%;
     width: 50%;
   }
+
+  @media only screen and (max-width: 950px) {
+    display: none;
+  }
 }
 
 </style>

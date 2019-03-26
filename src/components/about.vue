@@ -37,4 +37,14 @@ export default class About extends Vue {}
 </script>
 
 <style lang="scss" scoped>
+
+@media only screen and (max-width: 770px) {
+  .content-box-text {
+    font-size: 14px;
+    min-width: 100% !important;
+    box-shadow: 0 20px rgb(88, 9, 153) !important;
+    border-radius: 0 !important;
+  }
+}
+
 </style>

@@ -84,6 +84,11 @@ export default class Footer extends Vue {
     color: rgb(216, 124, 208);
   }
 
+  @media (max-width: 700px) {
+    height: 40px;
+    width: 40px;
+  }
+
   @media (max-width: 560px) {
     height: 30px;
     width: 30px;
@@ -123,7 +128,7 @@ export default class Footer extends Vue {
 .footer-content {
   padding: 25px 25px 25px 75px;
 
-  @media (max-width: 560px) {
+  @media (max-width: 700px) {
     padding: 25px;
   }
 }

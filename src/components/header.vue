@@ -54,6 +54,11 @@ export default class Header extends Vue {
   letter-spacing: .05em;
   animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
 
+  @media only screen and (max-width: 770px) {
+    font-size: 50px;
+    animation: typingTablet 3s steps(40, end), blink-caret .75s step-end infinite;
+  }
+
   @media only screen and (max-width: 560px) {
     font-size: 30px;
     margin-left: 5px;
@@ -69,6 +74,16 @@ export default class Header extends Vue {
 @keyframes typingMobile {
   from { width: 0 }
   to { width: 245px }
+}
+
+@keyframes typingTablet {
+  from { width: 0 }
+  to { width: 400px }
+}
+
+@-webkit-keyframes typingTablet {
+  from { width: 0 }
+  to { width: 400px }
 }
 
 @-webkit-keyframes typingMobile {
