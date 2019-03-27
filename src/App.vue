@@ -2,7 +2,7 @@
   <div>
     <div id="app">
       <ame-header/>
-      <ame-sidebar/>
+      <ame-sidebar v-if="$route.name === 'home'"/>
       <div class="content" id="content">
         <router-view/>
       </div>
@@ -24,9 +24,7 @@ import SideBar from '@/components/sidebar.vue';
     'ame-sidebar': SideBar,
   },
 })
-export default class App extends Vue {
-
-}
+export default class App extends Vue { }
 </script>
 
 
