@@ -3,7 +3,9 @@
     <div id="app">
       <ame-header/>
       <ame-sidebar/>
-      <ame-content/>
+      <div class="content" id="content">
+        <router-view/>
+      </div>
       <ame-footer/>
     </div>
   </div>
@@ -14,14 +16,12 @@ import { Vue, Component } from 'vue-property-decorator';
 import Header from '@/components/header.vue';
 import Footer from '@/components/footer.vue';
 import SideBar from '@/components/sidebar.vue';
-import Content from '@/components/content.vue';
 
 @Component({
   components: {
     'ame-header': Header,
     'ame-footer': Footer,
     'ame-sidebar': SideBar,
-    'ame-content': Content,
   },
 })
 export default class App extends Vue {

@@ -1,5 +1,5 @@
 <template>
-  <div id="content" class="content">
+  <div>
     <ame-about/>
     <ame-education/>
     <ame-skills/>
@@ -26,13 +26,5 @@ import Projects from '@/components/projects.vue';
     'ame-projects': Projects,
   },
 })
-export default class Content extends Vue {
-
-}
+export default class Content extends Vue { }
 </script>
-
-<style lang="scss" scoped>
-
-
-</style>
-
