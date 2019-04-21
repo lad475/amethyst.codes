@@ -12,9 +12,7 @@
       <ame-content-box v-for="(blog, index) in blogs" :key="index">
         <div class="content-box-text left">
           <span>{{ blog.title }}</span>
-          <div contenteditable="true"
-              v-html="blog.content">
-          </div>
+          <div v-html="blog.content"/>
         </div>
       </ame-content-box>
     </div>
