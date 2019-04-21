@@ -5,20 +5,26 @@
         <span class="section-title">My Blog</span>
       </div>
     </ame-content-box>
-    <ame-content-box v-for="(blog, index) in dummyBlogs" :key="index">
-      <div class="content-box-text left">
-        <span>{{ blog.title }}</span>
-        <div contenteditable="true"
-             v-html="blog.content">
+    <div v-if="blogs.length === 0">
+      <span>Hello</span>
+    </div>
+    <div v-if="blogs.length > 0">
+      <ame-content-box v-for="(blog, index) in blogs" :key="index">
+        <div class="content-box-text left">
+          <span>{{ blog.title }}</span>
+          <div contenteditable="true"
+              v-html="blog.content">
+          </div>
         </div>
-      </div>
-    </ame-content-box>
+      </ame-content-box>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 import ContentBox from '@/components/content-box.vue';
+import axios from 'axios';
 
 @Component({
   components: {
@@ -26,24 +32,24 @@ import ContentBox from '@/components/content-box.vue';
   },
 })
 export default class BlogListing extends Vue {
-  private dummyBlogs: Array<object>;
+  private blogs = [];
 
   constructor() { 
     super();
-    this.dummyBlogs = [
-      {
-        title: 'Number 1',
-        content: '<div>hey</div><p>bla bla bla bla bla bla bla bla bla</p>',
-        dateWritten: new Date(),
-      },
-      {
-        title: 'Number 2',
-        content: '<div>hey</div><p>bla bla bla bla bla bla bla bla bla</p>',
-        dateWritten: new Date(),
-      },
-    ];
   }
 
+  created() {
+    axios.get('http://localhost:3000/blog/all')
+      .then(res => {
+        this.blogs = res.data.blogs;
+      })
+      .catch(err => {
+
+      })
+      .finally(() => {
+
+      });
+  }
 }
   
 </script>
