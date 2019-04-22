@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 import BlogListing from './views/BlogListing.vue';
+import BlogEntry from './views/BlogEntry.vue';
 
 Vue.use(Router);
 
@@ -18,10 +19,10 @@ export default new Router({
       name: 'blog',
       component: BlogListing,
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    // }
+    {
+      path: '/blog/:slug',
+      name: 'blog-entry',
+      component: BlogEntry,
+    },
   ],
 });
