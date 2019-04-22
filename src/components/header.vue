@@ -1,17 +1,28 @@
 <template>
   <div id="header">
     <div class="mobile-amethyst"/>
-    <span class="title">amethyst.codes</span>
-    <div class="description">Just your average programmer with a passion for coffee and the color purple</div>
+    <span :class="'title ' + (useMainPageStyles ? 'with-sidebar' : '')">amethyst.codes</span>
+    <div :class="'description ' + (useMainPageStyles ? 'with-sidebar' : '')">Just your average programmer with a passion for coffee and the color purple</div>
   </div>
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator';
+import { Vue, Component, Watch } from 'vue-property-decorator';
 
 @Component
 export default class Header extends Vue {
+  private useMainPageStyles = true;
 
+  created() {
+    this.checkRoute();
+  }
+
+  @Watch('$route')
+  checkRoute() {
+    if (this.$route.name !== 'home') {
+      this.useMainPageStyles = false;
+    }
+  }
 }
 </script>
 
@@ -35,8 +46,12 @@ export default class Header extends Vue {
   box-sizing: border-box;
   background-color: purple;
   width: 100%;
-  padding: 5px 5px 5px 105px;
+  padding: 5px 5px 5px 25px;
   color: white;
+
+  &.with-sidebar {
+    padding: 5px 5px 5px 105px;
+  }
 
   @media only screen and (max-width: 560px) {
     padding-left: 5px;
@@ -50,8 +65,13 @@ export default class Header extends Vue {
   overflow: hidden;
   border-right: .05em solid purple;
   white-space: nowrap;
-  margin-left: 125px;
+  margin-left: 25px;
   letter-spacing: .05em;
+
+  &.with-sidebar {
+    margin-left: 125px;
+  }
+
   animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
 
   @media only screen and (max-width: 770px) {
