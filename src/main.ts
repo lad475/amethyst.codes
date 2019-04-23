@@ -5,6 +5,8 @@ import moment from 'moment';
 
 Vue.config.productionTip = false;
 
+Vue.prototype.$hostname = 'https://amethyst-apis.appspot.com';
+
 Vue.filter('formatDate', (date: string) => moment(date).format('dddd, MMMM Do YYYY'));
 
 new Vue({

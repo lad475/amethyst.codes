@@ -42,7 +42,7 @@ export default class BlogEntry extends Vue {
   @Watch('$route')
   getBlog() {
     this.loading = true;
-    axios.get(`http://localhost:3000/blog/${this.$route.params.slug}`)
+    axios.get(`${this.$hostname}/blog/${this.$route.params.slug}`)
       .then(res => {
         this.blog = res.data.blog;
       })
