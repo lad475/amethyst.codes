@@ -10,7 +10,7 @@
         watching the ways in which JavaScript has been evolving and changing over the last few years.  It's a great time to be a young programmer!
       </p>
       <p>
-        Aside from coding, I love to learn new things and am interested in a wide variety of subjects- I'm a classically trained double bassist of over 10 years, I love to paint, and I really adore cooking and learning new recipes.
+        Aside from coding, I love to learn new things and am interested in a wide variety of subjects- I'm a classically trained double bassist of over 10 years, I love to paint, and I really enjoy cooking and learning new recipes.
         I'm always collecting things that I find interesting, especially fun gadgets, with one of my favorite trinkets to collect being Tamagotchi, the virtual pets that took the world by storm in the '90s.
       </p>
       <p>

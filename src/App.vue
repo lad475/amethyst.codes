@@ -2,30 +2,37 @@
   <div>
     <div id="app">
       <ame-header/>
-      <ame-sidebar/>
-      <ame-content/>
+      <ame-sidebar v-if="$route.name === 'home'"/>
+      <div :class="'content ' + (hasSidebar ? 'with-sidebar' : '')" id="content">
+        <router-view/>
+      </div>
       <ame-footer/>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator';
+import { Vue, Component, Watch } from 'vue-property-decorator';
 import Header from '@/components/header.vue';
 import Footer from '@/components/footer.vue';
 import SideBar from '@/components/sidebar.vue';
-import Content from '@/components/content.vue';
 
 @Component({
   components: {
     'ame-header': Header,
     'ame-footer': Footer,
     'ame-sidebar': SideBar,
-    'ame-content': Content,
   },
 })
 export default class App extends Vue {
+  private hasSidebar = true;
 
+  created() { this.checkSidebar(); }
+
+  @Watch('$route')
+  checkSidebar() {
+    this.hasSidebar = this.$route.name === 'home';
+  }
 }
 </script>
 
@@ -64,7 +71,10 @@ body, html {
 
 .content {
   padding-bottom: 100px;
-  margin-left: 100px;
+
+  &.with-sidebar {
+    margin-left: 100px;
+  }
 }
 
 h1 {
