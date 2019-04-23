@@ -56,6 +56,7 @@ export default class Header extends Vue {
   span {
     @media only screen and (max-width: 760px) {
       display: block;
+      text-align: center;
     }
   }
 

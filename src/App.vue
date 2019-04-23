@@ -3,7 +3,7 @@
     <div id="app">
       <ame-header/>
       <ame-sidebar v-if="$route.name === 'home'"/>
-      <div class="content" id="content">
+      <div :class="'content ' + (hasSidebar ? 'with-sidebar' : '')" id="content">
         <router-view/>
       </div>
       <ame-footer/>
@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator';
+import { Vue, Component, Watch } from 'vue-property-decorator';
 import Header from '@/components/header.vue';
 import Footer from '@/components/footer.vue';
 import SideBar from '@/components/sidebar.vue';
@@ -24,7 +24,16 @@ import SideBar from '@/components/sidebar.vue';
     'ame-sidebar': SideBar,
   },
 })
-export default class App extends Vue { }
+export default class App extends Vue {
+  private hasSidebar = true;
+
+  created() { this.checkSidebar(); }
+
+  @Watch('$route')
+  checkSidebar() {
+    this.hasSidebar = this.$route.name === 'home';
+  }
+}
 </script>
 
 
@@ -62,7 +71,10 @@ body, html {
 
 .content {
   padding-bottom: 100px;
-  margin-left: 100px;
+
+  &.with-sidebar {
+    margin-left: 100px;
+  }
 }
 
 h1 {
