@@ -23,8 +23,10 @@ export default class Header extends Vue {
 
   @Watch('$route')
   checkRoute() {
-    if (this.$route.name !== 'home') {
+    if (this.$route.path !== '/') {
       this.useMainPageStyles = false;
+    } else {
+      this.useMainPageStyles = true;
     }
   }
 }
