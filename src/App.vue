@@ -74,6 +74,10 @@ body, html {
 
   &.with-sidebar {
     margin-left: 100px;
+
+    @media (max-width: 560px) {
+      margin-left: 0;
+    }
   }
 }
 
