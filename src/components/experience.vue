@@ -11,9 +11,29 @@
         WW (formerly WeightWatchers)
       </span>
       <div class="exp-description">
+        <div class="exp-img ww"/>
+        <div class="position">Software Engineer</div>
+        <div class="date">June 2019 - Present</div>
+        <div class="bullets">
+          <ul>
+            <li>Architects a React application that locates WW studio locations served by a custom express server using test-driven development strategies working as the sole developer.  Utilizes code climate to ensure clean code, and has a test coverage of 95%+</li>
+            <li>Works with a team of developers on several full-stack applications including various APIs and Angular 7/React apps related to signup and user retention.</li>
+            <li>Engages in code review with other developers to ensure consistency and clean code.</li>
+            <li>Uses latest technologies, including React with functional components and Angular 7+.  Unit tests for both React and Angular applications are using the Jest runner.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ame-content-box>
+  <ame-content-box>
+    <div class="ww content-box-text">
+      <span class="sub-section-title">
+        WW (formerly WeightWatchers)
+      </span>
+      <div class="exp-description">
         <div class="exp-img ww"></div>
         <div class="position">Full Stack Engineering Intern</div>
-        <div class="date">May 2018 - Present</div>
+        <div class="date">May 2018 - June 2019</div>
         <div class="bullets">
           <ul>
             <li>Utilized front-end frameworks such as Angular 2-7, AngularJS and React to write reactive web-apps related to signup and user retention</li>

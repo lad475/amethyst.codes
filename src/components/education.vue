@@ -17,7 +17,7 @@
           <span>BA in Computer Science</span>
           <span>Minor in Web Programming</span>
           <span>GPA: 3.75</span>
-          <span>Expected May 2019</span>
+          <span>May 2019</span>
         </p>
       </div>
     </div>

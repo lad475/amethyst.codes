@@ -7,8 +7,8 @@
         <div class="languages">
           <span class="sub-section-title">Languages</span>
           <ul>
-            <li>TypeScript</li>
             <li>JavaScript (ES6)</li>
+            <li>TypeScript</li>
             <li>HTML/CSS + SASS</li>
             <li>Lua</li>
             <li>Java</li>
@@ -18,11 +18,11 @@
         <div class="web-tech">
           <span class="sub-section-title">Web Technologies</span>
           <ul>
-            <li>Angular 2-7</li>
+            <li>React.js</li>
+            <li>Angular 2+</li>
             <li>Vue.js</li>
             <li>Node.js</li>
             <li>Express.js</li>
-            <li>React.js</li>
             <li>MongoDB + Mongoose</li>
           </ul>
         </div>

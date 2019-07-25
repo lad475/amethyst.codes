@@ -6,7 +6,8 @@
       </span>
       <hr/>
       <p>
-        My name's Lauren DiGiovanni, and I'm a software engineer located in Brooklyn, New York.  I'm currently finishing up my last year at NYU, earning my degree in Computer Science.  I currently specialize in full-stack web development, and have had a blast
+        My name is Lauren DiGiovanni, and I'm a software engineer located in Brooklyn, New York.  
+        I graduated from New York University in May of 2019, earning my Bachelor's in Computer Science.  Currently, I specialize in full-stack web development, and have had a blast
         watching the ways in which JavaScript has been evolving and changing over the last few years.  It's a great time to be a young programmer!
       </p>
       <p>
@@ -16,6 +17,9 @@
       <p>
         I love to spend my free time finding new cafés and reading books over a cortado: my favorite book is The Bell Jar by Sylvia Plath.  I actively enjoy writing as well as reading, and spent one summer abroad in Paris studying creative writing.
         Someday I dream of publishing a novel.
+      </p>
+      <p>
+        I also have an <a href="https://www.instagram.com/biteofmybento/?hl=en">Instagram account</a> where I post pictures of bento boxes that I make for lunch at work every day.  It's a huge outlet for my creativity, plus I love Japanese food!
       </p>
     </div>
     <div class="content-box-image">
